@@ -1,2 +1,2 @@
 # ct_tools
-Utilities for automating Crowdtangle tasks
+Utilities for automating Crowdtangle tasks using selenium Python.
