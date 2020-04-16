@@ -7,14 +7,13 @@ Created on Wed Mar  4 14:57:21 2020
 
 ##Script to automate collecting intelligence from CrowdTangle
 
-##Step 1. Get list of page ids from CT
-##Step 2. Enter list in dem_pages variable of this script
+##Step 1. Get list of page ids from elements in a CT Leaderboard and save as Leaderboard_Ids.csv
+##Step 2. Load the csv at line 64 and check that everything transferred
 ##Step 3. Enter phone number and password for the fb account needed to access CT
-##Step 4. Check the date range in browser.get() in main function-- make sure the end date goes until today
+##Step 4. Check the date range in browser.get() in main function-- make sure the end date goes until today and URL has correct interval
 ##Step 5. Run this script
 
-##For this file to run correctly, you need to log in to crowdtangle in the automated browser 
-##BEFORE starting the program
+
 
 from time import sleep
 from random import randint
