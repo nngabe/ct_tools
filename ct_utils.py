@@ -115,7 +115,7 @@ def update_list(uids, driver, ct_url, action):
     search_box.click()
     search_box.send_keys(uid)
     search_box.send_keys(Keys.ENTER)
-    time.sleep(2)
+    time.sleep(4)
 
     try:
       xpath = '//*[@id="add-producers-container"]/div/div/div[2]/div/div/div[2]/button'
@@ -163,38 +163,47 @@ def grab_posts(uids, driver, ct_url):
       time.sleep(4)
       break
     except:
-      time.sleep(1)
+      time.sleep(2)
       pass
-
+  i = 1
+  n = len(uids)
   for uid in uids:
+
+    print('--------------------')
+    print('attempting %i/%i: %s' % (i,n,uid))
+    i += 1 
+
     ### add page
     try:
       xpath = '//*[@id="manage-lists-nav"]/li[2]/a'
       search_tab = driver.find_element_by_xpath(xpath)
       search_tab.click()
-      time.sleep(2)
+      time.sleep(3)
     except:
       print('cant go to Add page tab. Already there?')
 
     # go to search box and search uid
     xpath = '//*[@id="add-producers-container"]/div/div/div[1]/div/input'
     search_box = driver.find_element_by_xpath(xpath)
-    time.sleep(2)
+    time.sleep(3)
 
     search_box.click()
     search_box.send_keys(uid)
     search_box.send_keys(Keys.ENTER)
-    time.sleep(2)
+    time.sleep(6)
 
     # check status and add page if not added yet
-    xpath = '//*[@id="add-producers-container"]/div/div/div[2]/div/div/div[2]/button'
-    sign = driver.find_element_by_xpath(xpath + '/i')
-    button = driver.find_element_by_xpath(xpath)
-    if (sign.get_attribute('class')=='fas fa-plus' ):
-      button.click()
-      print('success: ',uid)
-    else:
-      print('already in list: ',uid)
+    try:
+      xpath = '//*[@id="add-producers-container"]/div/div/div[2]/div/div/div[2]/button'
+      sign = driver.find_element_by_xpath(xpath + '/i')
+      button = driver.find_element_by_xpath(xpath)
+      if (sign.get_attribute('class')=='fas fa-plus' ):
+        button.click()
+        print('success: ',uid)
+      else:
+        print('already in list: ',uid)
+    except:
+      pass
 
     time.sleep(2)
 
@@ -202,50 +211,84 @@ def grab_posts(uids, driver, ct_url):
     xpath = '//*[@id="manage-lists-nav"]/li[1]/a'
     view_tab = driver.find_element_by_xpath(xpath)
     view_tab.click()
-    time.sleep(2)
-
-    xpath = '/html/body/div[3]/div/div[3]/div/div/div[2]/div[2]/div[4]/div/div[2]/div/ul/li/ul/li/div[2]/div/span[1]/a'
-    download_button = driver.find_element_by_xpath(xpath)
-    download_button.click()
-    time.sleep(4) 
-    submit = driver.find_element_by_xpath('//*[@id="submit_button"]')
-    submit.click()
     time.sleep(4)
-    print('sending csv to email...')
+    try:
+      xpath = '/html/body/div[3]/div/div[3]/div/div/div[2]/div[2]/div[4]/div/div[2]/div/ul/li/ul/li/div[2]/div/span[1]/a'
+      download_button = driver.find_element_by_xpath(xpath)
+      download_button.click()
+      time.sleep(4) 
+      submit = driver.find_element_by_xpath('//*[@id="submit_button"]')
+      submit.click()
+      time.sleep(4)
+    except:
+      pass
+    
+    clear_list(driver)
 
     ### remove page
     xpath = '//*[@id="manage-lists-nav"]/li[2]/a'
     search_tab = driver.find_element_by_xpath(xpath)
     search_tab.click()
-    time.sleep(2) 
+    time.sleep(4) 
 
     # go to search box and search uid
-    xpath = '//*[@id="add-producers-container"]/div/div/div[1]/div/input'
-    search_box = driver.find_element_by_xpath(xpath)
-    time.sleep(2)
+    try:
+      xpath = '//*[@id="add-producers-container"]/div/div/div[1]/div/input'
+      search_box = driver.find_element_by_xpath(xpath)
+      time.sleep(4)
 
-    search_box.click()
-    search_box.send_keys(uid)
-    search_box.send_keys(Keys.ENTER)
-    time.sleep(2)
-    
+      search_box.click()
+      search_box.send_keys(uid)
+      search_box.send_keys(Keys.ENTER)
+      time.sleep(6)
+    except:
+      pass
     # check status and add page if not added yet
-    xpath = '//*[@id="add-producers-container"]/div/div/div[2]/div/div/div[2]/button'
-    sign = driver.find_element_by_xpath(xpath + '/i')
-    button = driver.find_element_by_xpath(xpath)
-    if (sign.get_attribute('class')=='fas fa-minus'):
-      button.click()
-      print('success: ',uid)
-    else:
-      print('already in list: ',uid)
+    try:
+      xpath = '//*[@id="add-producers-container"]/div/div/div[2]/div/div/div[2]/button'
+      sign = driver.find_element_by_xpath(xpath + '/i')
+      button = driver.find_element_by_xpath(xpath)
+      if (sign.get_attribute('class')=='fas fa-minus'):
+        button.click()
+        print('success: ',uid)
+      else:
+        print('already in list: ',uid)
+    except:
+      pass
 
     time.sleep(2)
-    search_box.clear()
+    try:
+      search_box.clear()
+    except:
+      pass
     time.sleep(4)
+
+def clear_list(driver):
+
+  try:
+    xpath = '//*[@id="manage-lists-nav"]/li[1]/a'
+    view_tab = driver.find_element_by_xpath(xpath)
+    view_tab.click()
+    time.sleep(4)
+  except:
+    pass
+
+  for i in range(1,10):
+    try:
+      xpath = '/html/body/div[3]/div/div[3]/div/div/div[2]/div[2]/div[4]/div/div[2]/div/ul/li[' + str(i) + ']/ul/li/div[2]/div/a'
+      remove_button = driver.find_element_by_xpath(xpath)
+      remove_button.click()
+      time.sleep(1)
+      xpath = '/html/body/div[3]/div/div[3]/div/div/div[2]/div[2]/div[4]/div/div[2]/div/ul/li[' + str(i) + ']/ul/li/div[2]/div/div/a[1]'
+      remove_confirm = driver.find_element_by_xpath(xpath)
+      remove_confirm.click()
+      time.sleep(1)
+    except:
+      break 
 
 if __name__ == '__main__':
 
-  uids = list(pd.read_csv('~/vax_new.tsv','\t').loc[:,'fb_uid'].astype(str))[0:3]
+  uids = list(pd.read_csv('~/vax_new.tsv','\t').loc[:,'fb_uid'].astype(str))[862:]
   dummies = ['230114651240','110844299008350','147555688654796']
   ct_url = 'https://apps.crowdtangle.com/iddptest/lists/1364653'
   fb_username = pd.read_csv('~/cred.csv').iloc[0,0]
@@ -255,12 +298,16 @@ if __name__ == '__main__':
 
   driver = get_driver()
   fb_login(driver, fb_username, fb_password)
+  
   update_list(dummies, driver, ct_url, 'remove')
   print('dummy pages removed...')
+  
   grab_posts(uids,driver, ct_url)
   print('downloaded posts...')
+  
   update_list(dummies, driver, ct_url, 'add')
   print('dummy pages restored...')
+
   print('closing driver...')
   driver.close()
 
