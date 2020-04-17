@@ -7,8 +7,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 import numpy as np
+from numpy.random import randint
 import pandas as pd
-
 
 
 def fb_login(driver,username,password):
