@@ -89,8 +89,13 @@ def message_str(message,service):
     return msg_str    
 
 if __name__ == '__main__':
+    # log in to gmail 
     creds = credentials()
+    # gmail query
     query = 'from:feedback@crowdtangle.com crowdtangle "Data Download Request" after:04/01/2020'
+    # only need to specify for more than 500 emails
     maxResults = 500
+    # get gmail id number for each email
     messages = get_messages(creds,query,maxResults)
+    # get hyperlink from email and wget download
     ct_message_download(messages)
