@@ -1,0 +1,423 @@
+ 2020-05-12 12:12:07,898 - DEBUG- Start of program
+ 2020-05-12 12:12:21,985 - DEBUG- Start of program
+ 2020-05-12 12:13:38,023 - DEBUG- diff parser start
+ 2020-05-12 12:13:38,023 - DEBUG- line_lengths old: 1; new: 1
+ 2020-05-12 12:13:38,023 - DEBUG- -> code[replace] old[1:1] new[1:1]
+ 2020-05-12 12:13:38,024 - DEBUG- parse_part from 1 to 1 (to 0 in part parser)
+ 2020-05-12 12:13:38,024 - DEBUG- diff parser end
+ 2020-05-12 12:13:38,086 - DEBUG- pickle loaded: /home/gabe/anaconda3/lib/python3.7/site-packages/jedi/third_party/typeshed/stdlib/3/sys.pyi
+ 2020-05-12 12:13:41,305 - DEBUG- diff parser start
+ 2020-05-12 12:13:41,305 - DEBUG- line_lengths old: 1; new: 1
+ 2020-05-12 12:13:41,305 - DEBUG- -> code[replace] old[1:1] new[1:1]
+ 2020-05-12 12:13:41,306 - DEBUG- parse_part from 1 to 1 (to 0 in part parser)
+ 2020-05-12 12:13:41,306 - DEBUG- diff parser end
+ 2020-05-12 12:17:39,715 - DEBUG- diff parser start
+ 2020-05-12 12:17:39,715 - DEBUG- line_lengths old: 1; new: 1
+ 2020-05-12 12:17:39,715 - DEBUG- -> code[replace] old[1:1] new[1:1]
+ 2020-05-12 12:17:39,716 - DEBUG- parse_part from 1 to 1 (to 0 in part parser)
+ 2020-05-12 12:17:39,716 - DEBUG- diff parser end
+ 2020-05-12 12:17:40,942 - DEBUG- diff parser start
+ 2020-05-12 12:17:40,943 - DEBUG- line_lengths old: 1; new: 1
+ 2020-05-12 12:17:40,943 - DEBUG- -> code[replace] old[1:1] new[1:1]
+ 2020-05-12 12:17:40,943 - DEBUG- parse_part from 1 to 1 (to 0 in part parser)
+ 2020-05-12 12:17:40,944 - DEBUG- diff parser end
+ 2020-05-12 12:21:19,878 - DEBUG- diff parser start
+ 2020-05-12 12:21:19,879 - DEBUG- line_lengths old: 1; new: 1
+ 2020-05-12 12:21:19,879 - DEBUG- -> code[replace] old[1:1] new[1:1]
+ 2020-05-12 12:21:19,880 - DEBUG- parse_part from 1 to 1 (to 0 in part parser)
+ 2020-05-12 12:21:19,880 - DEBUG- diff parser end
+ 2020-05-12 12:21:20,463 - DEBUG- Start of program
+ 2020-05-12 12:27:51,118 - DEBUG- Start of program
+ 2020-05-12 12:27:52,133 - DEBUG- POST http://127.0.0.1:58773/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:27:52,134 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:58773
+ 2020-05-12 12:27:52,446 - DEBUG- http://127.0.0.1:58773 "POST /session HTTP/1.1" 500 185
+ 2020-05-12 12:27:52,447 - DEBUG- Finished Request
+ 2020-05-12 12:34:12,693 - DEBUG- Start of program
+ 2020-05-12 12:34:13,702 - DEBUG- POST http://127.0.0.1:50545/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:34:13,703 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:50545
+ 2020-05-12 12:34:14,002 - DEBUG- http://127.0.0.1:50545 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:34:14,003 - DEBUG- Finished Request
+ 2020-05-12 12:34:14,003 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/timeouts {"implicit": 15000}
+ 2020-05-12 12:34:14,005 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:34:14,005 - DEBUG- Finished Request
+ 2020-05-12 12:34:14,005 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:34:15,158 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/url HTTP/1.1" 200 14
+ 2020-05-12 12:34:15,158 - DEBUG- Finished Request
+ 2020-05-12 12:34:15,159 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:34:15,327 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element HTTP/1.1" 200 88
+ 2020-05-12 12:34:15,327 - DEBUG- Finished Request
+ 2020-05-12 12:34:15,327 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element/f19290d4-8782-43d2-8532-55213aafd528/click {"id": "f19290d4-8782-43d2-8532-55213aafd528"}
+ 2020-05-12 12:34:16,314 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element/f19290d4-8782-43d2-8532-55213aafd528/click HTTP/1.1" 200 14
+ 2020-05-12 12:34:16,315 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,315 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:34:16,328 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element HTTP/1.1" 200 88
+ 2020-05-12 12:34:16,328 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,328 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element/84ec5fde-d2af-423b-94a5-b1d4a608fe8a/click {"id": "84ec5fde-d2af-423b-94a5-b1d4a608fe8a"}
+ 2020-05-12 12:34:16,395 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element/84ec5fde-d2af-423b-94a5-b1d4a608fe8a/click HTTP/1.1" 200 14
+ 2020-05-12 12:34:16,395 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,396 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element/84ec5fde-d2af-423b-94a5-b1d4a608fe8a/value {"text": "7033954223", "value": ["7", "0", "3", "3", "9", "5", "4", "2", "2", "3"], "id": "84ec5fde-d2af-423b-94a5-b1d4a608fe8a"}
+ 2020-05-12 12:34:16,464 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element/84ec5fde-d2af-423b-94a5-b1d4a608fe8a/value HTTP/1.1" 200 14
+ 2020-05-12 12:34:16,465 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,465 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:34:16,482 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element HTTP/1.1" 200 88
+ 2020-05-12 12:34:16,482 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,482 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element/3c15ea81-0660-4c4f-be95-5fc254a2d8fa/click {"id": "3c15ea81-0660-4c4f-be95-5fc254a2d8fa"}
+ 2020-05-12 12:34:16,543 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element/3c15ea81-0660-4c4f-be95-5fc254a2d8fa/click HTTP/1.1" 200 14
+ 2020-05-12 12:34:16,544 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,544 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element/3c15ea81-0660-4c4f-be95-5fc254a2d8fa/value {"text": "Squark3n8lork", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k"], "id": "3c15ea81-0660-4c4f-be95-5fc254a2d8fa"}
+ 2020-05-12 12:34:16,625 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element/3c15ea81-0660-4c4f-be95-5fc254a2d8fa/value HTTP/1.1" 200 14
+ 2020-05-12 12:34:16,625 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,625 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:34:16,644 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element HTTP/1.1" 200 88
+ 2020-05-12 12:34:16,644 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,644 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element/870cefba-9b10-4bc7-a57d-ca201d85fa0d/click {"id": "870cefba-9b10-4bc7-a57d-ca201d85fa0d"}
+ 2020-05-12 12:34:16,715 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element/870cefba-9b10-4bc7-a57d-ca201d85fa0d/click HTTP/1.1" 200 14
+ 2020-05-12 12:34:16,715 - DEBUG- Finished Request
+ 2020-05-12 12:34:16,716 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:34:22,990 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/url HTTP/1.1" 200 14
+ 2020-05-12 12:34:22,990 - DEBUG- Finished Request
+ 2020-05-12 12:34:25,994 - DEBUG- POST http://127.0.0.1:50545/session/c64ca9a66223b72ffb9eb42cacb6db0b/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:34:26,597 - DEBUG- http://127.0.0.1:50545 "POST /session/c64ca9a66223b72ffb9eb42cacb6db0b/element HTTP/1.1" 200 14
+ 2020-05-12 12:34:26,597 - DEBUG- Finished Request
+ 2020-05-12 12:35:42,625 - DEBUG- Start of program
+ 2020-05-12 12:35:43,635 - DEBUG- POST http://127.0.0.1:57371/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:35:43,636 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:57371
+ 2020-05-12 12:35:43,983 - DEBUG- http://127.0.0.1:57371 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:35:43,984 - DEBUG- Finished Request
+ 2020-05-12 12:35:43,984 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/timeouts {"implicit": 15000}
+ 2020-05-12 12:35:43,985 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:35:43,985 - DEBUG- Finished Request
+ 2020-05-12 12:35:43,985 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:35:45,216 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/url HTTP/1.1" 200 14
+ 2020-05-12 12:35:45,217 - DEBUG- Finished Request
+ 2020-05-12 12:35:45,217 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:35:45,344 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element HTTP/1.1" 200 88
+ 2020-05-12 12:35:45,345 - DEBUG- Finished Request
+ 2020-05-12 12:35:45,345 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element/2ba86112-2075-41af-a7de-47fbb5657e96/click {"id": "2ba86112-2075-41af-a7de-47fbb5657e96"}
+ 2020-05-12 12:35:46,437 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element/2ba86112-2075-41af-a7de-47fbb5657e96/click HTTP/1.1" 200 14
+ 2020-05-12 12:35:46,438 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,438 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:35:46,454 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element HTTP/1.1" 200 88
+ 2020-05-12 12:35:46,455 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,455 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element/6f86edeb-7408-471b-bd7c-4b7ae63d88f5/click {"id": "6f86edeb-7408-471b-bd7c-4b7ae63d88f5"}
+ 2020-05-12 12:35:46,519 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element/6f86edeb-7408-471b-bd7c-4b7ae63d88f5/click HTTP/1.1" 200 14
+ 2020-05-12 12:35:46,520 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,520 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element/6f86edeb-7408-471b-bd7c-4b7ae63d88f5/value {"text": "nickgabriel8@gmail.com", "value": ["n", "i", "c", "k", "g", "a", "b", "r", "i", "e", "l", "8", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "6f86edeb-7408-471b-bd7c-4b7ae63d88f5"}
+ 2020-05-12 12:35:46,662 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element/6f86edeb-7408-471b-bd7c-4b7ae63d88f5/value HTTP/1.1" 200 14
+ 2020-05-12 12:35:46,662 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,662 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:35:46,678 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element HTTP/1.1" 200 88
+ 2020-05-12 12:35:46,678 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,678 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element/d88b8ff3-8044-450d-9858-a03ae80aa082/click {"id": "d88b8ff3-8044-450d-9858-a03ae80aa082"}
+ 2020-05-12 12:35:46,734 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element/d88b8ff3-8044-450d-9858-a03ae80aa082/click HTTP/1.1" 200 14
+ 2020-05-12 12:35:46,735 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,735 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element/d88b8ff3-8044-450d-9858-a03ae80aa082/value {"text": "Squark3n8lork!!", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k", "!", "!"], "id": "d88b8ff3-8044-450d-9858-a03ae80aa082"}
+ 2020-05-12 12:35:46,825 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element/d88b8ff3-8044-450d-9858-a03ae80aa082/value HTTP/1.1" 200 14
+ 2020-05-12 12:35:46,826 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,826 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:35:46,842 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element HTTP/1.1" 200 88
+ 2020-05-12 12:35:46,843 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,843 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element/a7fae460-cd6d-4cd7-9749-01dd8e0505af/click {"id": "a7fae460-cd6d-4cd7-9749-01dd8e0505af"}
+ 2020-05-12 12:35:46,925 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element/a7fae460-cd6d-4cd7-9749-01dd8e0505af/click HTTP/1.1" 200 14
+ 2020-05-12 12:35:46,926 - DEBUG- Finished Request
+ 2020-05-12 12:35:46,926 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:35:50,394 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/url HTTP/1.1" 200 14
+ 2020-05-12 12:35:50,394 - DEBUG- Finished Request
+ 2020-05-12 12:35:53,398 - DEBUG- POST http://127.0.0.1:57371/session/16f139a09feb0fc13267a55ef1494a51/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:36:08,437 - DEBUG- http://127.0.0.1:57371 "POST /session/16f139a09feb0fc13267a55ef1494a51/element HTTP/1.1" 404 294
+ 2020-05-12 12:36:08,437 - DEBUG- Finished Request
+ 2020-05-12 12:37:21,400 - DEBUG- Start of program
+ 2020-05-12 12:37:22,409 - DEBUG- POST http://127.0.0.1:42335/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:37:22,413 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:42335
+ 2020-05-12 12:37:22,841 - DEBUG- http://127.0.0.1:42335 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:37:22,841 - DEBUG- Finished Request
+ 2020-05-12 12:37:22,842 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/timeouts {"implicit": 8000}
+ 2020-05-12 12:37:22,842 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:37:22,842 - DEBUG- Finished Request
+ 2020-05-12 12:37:22,842 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:37:24,066 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/url HTTP/1.1" 200 14
+ 2020-05-12 12:37:24,066 - DEBUG- Finished Request
+ 2020-05-12 12:37:24,066 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:37:24,103 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element HTTP/1.1" 200 88
+ 2020-05-12 12:37:24,104 - DEBUG- Finished Request
+ 2020-05-12 12:37:24,104 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element/6cbfe2b7-7c34-4dda-945c-eee8c5799651/click {"id": "6cbfe2b7-7c34-4dda-945c-eee8c5799651"}
+ 2020-05-12 12:37:25,109 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element/6cbfe2b7-7c34-4dda-945c-eee8c5799651/click HTTP/1.1" 200 14
+ 2020-05-12 12:37:25,109 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,109 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:37:25,126 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element HTTP/1.1" 200 88
+ 2020-05-12 12:37:25,127 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,127 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element/866d4644-de0e-430a-aa23-41474ac36d59/click {"id": "866d4644-de0e-430a-aa23-41474ac36d59"}
+ 2020-05-12 12:37:25,190 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element/866d4644-de0e-430a-aa23-41474ac36d59/click HTTP/1.1" 200 14
+ 2020-05-12 12:37:25,191 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,191 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element/866d4644-de0e-430a-aa23-41474ac36d59/value {"text": "nickgabriel8@gmail.com", "value": ["n", "i", "c", "k", "g", "a", "b", "r", "i", "e", "l", "8", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "866d4644-de0e-430a-aa23-41474ac36d59"}
+ 2020-05-12 12:37:25,323 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element/866d4644-de0e-430a-aa23-41474ac36d59/value HTTP/1.1" 200 14
+ 2020-05-12 12:37:25,323 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,324 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:37:25,338 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element HTTP/1.1" 200 88
+ 2020-05-12 12:37:25,338 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,339 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element/c8ac293b-e887-4244-ac48-8b76f6207bfc/click {"id": "c8ac293b-e887-4244-ac48-8b76f6207bfc"}
+ 2020-05-12 12:37:25,407 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element/c8ac293b-e887-4244-ac48-8b76f6207bfc/click HTTP/1.1" 200 14
+ 2020-05-12 12:37:25,407 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,407 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element/c8ac293b-e887-4244-ac48-8b76f6207bfc/value {"text": "Squark3n8lork!!", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k", "!", "!"], "id": "c8ac293b-e887-4244-ac48-8b76f6207bfc"}
+ 2020-05-12 12:37:25,495 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element/c8ac293b-e887-4244-ac48-8b76f6207bfc/value HTTP/1.1" 200 14
+ 2020-05-12 12:37:25,496 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,496 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:37:25,516 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element HTTP/1.1" 200 88
+ 2020-05-12 12:37:25,516 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,517 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element/aa6c8eb4-fbb3-4f7e-aa81-de1bd7103864/click {"id": "aa6c8eb4-fbb3-4f7e-aa81-de1bd7103864"}
+ 2020-05-12 12:37:25,589 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element/aa6c8eb4-fbb3-4f7e-aa81-de1bd7103864/click HTTP/1.1" 200 14
+ 2020-05-12 12:37:25,589 - DEBUG- Finished Request
+ 2020-05-12 12:37:25,590 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:37:28,570 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/url HTTP/1.1" 200 14
+ 2020-05-12 12:37:28,570 - DEBUG- Finished Request
+ 2020-05-12 12:37:31,574 - DEBUG- POST http://127.0.0.1:42335/session/d65581c570bed1a9722686b75ec7455c/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:37:39,578 - DEBUG- http://127.0.0.1:42335 "POST /session/d65581c570bed1a9722686b75ec7455c/element HTTP/1.1" 404 294
+ 2020-05-12 12:37:39,579 - DEBUG- Finished Request
+ 2020-05-12 12:39:18,462 - DEBUG- Start of program
+ 2020-05-12 12:39:19,472 - DEBUG- POST http://127.0.0.1:40227/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:39:19,473 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:40227
+ 2020-05-12 12:39:19,894 - DEBUG- http://127.0.0.1:40227 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:39:19,895 - DEBUG- Finished Request
+ 2020-05-12 12:39:19,895 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/timeouts {"implicit": 8000}
+ 2020-05-12 12:39:19,896 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:39:19,896 - DEBUG- Finished Request
+ 2020-05-12 12:39:19,897 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:39:21,054 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/url HTTP/1.1" 200 14
+ 2020-05-12 12:39:21,054 - DEBUG- Finished Request
+ 2020-05-12 12:39:21,055 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:39:21,227 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element HTTP/1.1" 200 88
+ 2020-05-12 12:39:21,228 - DEBUG- Finished Request
+ 2020-05-12 12:39:21,228 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element/61a787d6-e739-4139-ae4c-273505a87a96/click {"id": "61a787d6-e739-4139-ae4c-273505a87a96"}
+ 2020-05-12 12:39:22,239 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element/61a787d6-e739-4139-ae4c-273505a87a96/click HTTP/1.1" 200 14
+ 2020-05-12 12:39:22,239 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,240 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:39:22,253 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element HTTP/1.1" 200 88
+ 2020-05-12 12:39:22,253 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,253 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element/c0126e65-f4bc-4928-9831-a800aaaae962/click {"id": "c0126e65-f4bc-4928-9831-a800aaaae962"}
+ 2020-05-12 12:39:22,325 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element/c0126e65-f4bc-4928-9831-a800aaaae962/click HTTP/1.1" 200 14
+ 2020-05-12 12:39:22,325 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,326 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element/c0126e65-f4bc-4928-9831-a800aaaae962/value {"text": "nickgabriel8@gmail.com", "value": ["n", "i", "c", "k", "g", "a", "b", "r", "i", "e", "l", "8", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "c0126e65-f4bc-4928-9831-a800aaaae962"}
+ 2020-05-12 12:39:22,455 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element/c0126e65-f4bc-4928-9831-a800aaaae962/value HTTP/1.1" 200 14
+ 2020-05-12 12:39:22,456 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,456 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:39:22,473 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element HTTP/1.1" 200 88
+ 2020-05-12 12:39:22,474 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,474 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element/4bcbdd88-55e5-480a-8f6d-25adffc6065c/click {"id": "4bcbdd88-55e5-480a-8f6d-25adffc6065c"}
+ 2020-05-12 12:39:22,531 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element/4bcbdd88-55e5-480a-8f6d-25adffc6065c/click HTTP/1.1" 200 14
+ 2020-05-12 12:39:22,531 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,532 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element/4bcbdd88-55e5-480a-8f6d-25adffc6065c/value {"text": "Squark3n8lork!!", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k", "!", "!"], "id": "4bcbdd88-55e5-480a-8f6d-25adffc6065c"}
+ 2020-05-12 12:39:22,616 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element/4bcbdd88-55e5-480a-8f6d-25adffc6065c/value HTTP/1.1" 200 14
+ 2020-05-12 12:39:22,616 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,617 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:39:22,633 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element HTTP/1.1" 200 88
+ 2020-05-12 12:39:22,634 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,634 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element/d25da1c4-fafc-4b80-9e97-686094eed36d/click {"id": "d25da1c4-fafc-4b80-9e97-686094eed36d"}
+ 2020-05-12 12:39:22,712 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element/d25da1c4-fafc-4b80-9e97-686094eed36d/click HTTP/1.1" 200 14
+ 2020-05-12 12:39:22,713 - DEBUG- Finished Request
+ 2020-05-12 12:39:22,713 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:39:26,288 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/url HTTP/1.1" 200 14
+ 2020-05-12 12:39:26,288 - DEBUG- Finished Request
+ 2020-05-12 12:39:29,291 - DEBUG- POST http://127.0.0.1:40227/session/967431537cf1efb14fdd74d1a3d47e6f/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:39:37,339 - DEBUG- http://127.0.0.1:40227 "POST /session/967431537cf1efb14fdd74d1a3d47e6f/element HTTP/1.1" 404 294
+ 2020-05-12 12:39:37,339 - DEBUG- Finished Request
+ 2020-05-12 12:51:51,319 - DEBUG- Start of program
+ 2020-05-12 12:51:52,330 - DEBUG- POST http://127.0.0.1:36443/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:51:52,331 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:36443
+ 2020-05-12 12:51:52,723 - DEBUG- http://127.0.0.1:36443 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:51:52,723 - DEBUG- Finished Request
+ 2020-05-12 12:51:52,724 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/timeouts {"implicit": 8000}
+ 2020-05-12 12:51:52,725 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:51:52,725 - DEBUG- Finished Request
+ 2020-05-12 12:51:52,726 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:51:53,951 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/url HTTP/1.1" 200 14
+ 2020-05-12 12:51:53,951 - DEBUG- Finished Request
+ 2020-05-12 12:51:53,951 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:51:54,082 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element HTTP/1.1" 200 88
+ 2020-05-12 12:51:54,083 - DEBUG- Finished Request
+ 2020-05-12 12:51:54,083 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element/4bb991f9-f327-4c77-9b7a-70cba881e10a/click {"id": "4bb991f9-f327-4c77-9b7a-70cba881e10a"}
+ 2020-05-12 12:51:55,161 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element/4bb991f9-f327-4c77-9b7a-70cba881e10a/click HTTP/1.1" 200 14
+ 2020-05-12 12:51:55,162 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,162 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:51:55,173 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element HTTP/1.1" 200 88
+ 2020-05-12 12:51:55,174 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,174 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element/7125affa-92e5-45a0-a9bb-6a3542a3856e/click {"id": "7125affa-92e5-45a0-a9bb-6a3542a3856e"}
+ 2020-05-12 12:51:55,245 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element/7125affa-92e5-45a0-a9bb-6a3542a3856e/click HTTP/1.1" 200 14
+ 2020-05-12 12:51:55,246 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,246 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element/7125affa-92e5-45a0-a9bb-6a3542a3856e/value {"text": "nickgabriel8@gmail.com", "value": ["n", "i", "c", "k", "g", "a", "b", "r", "i", "e", "l", "8", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "7125affa-92e5-45a0-a9bb-6a3542a3856e"}
+ 2020-05-12 12:51:55,372 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element/7125affa-92e5-45a0-a9bb-6a3542a3856e/value HTTP/1.1" 200 14
+ 2020-05-12 12:51:55,373 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,373 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:51:55,386 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element HTTP/1.1" 200 88
+ 2020-05-12 12:51:55,387 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,387 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element/8aa47cf5-8bb9-4c83-ae0c-add3841c6d1e/click {"id": "8aa47cf5-8bb9-4c83-ae0c-add3841c6d1e"}
+ 2020-05-12 12:51:55,438 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element/8aa47cf5-8bb9-4c83-ae0c-add3841c6d1e/click HTTP/1.1" 200 14
+ 2020-05-12 12:51:55,438 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,438 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element/8aa47cf5-8bb9-4c83-ae0c-add3841c6d1e/value {"text": "Squark3n8lork!!", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k", "!", "!"], "id": "8aa47cf5-8bb9-4c83-ae0c-add3841c6d1e"}
+ 2020-05-12 12:51:55,507 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element/8aa47cf5-8bb9-4c83-ae0c-add3841c6d1e/value HTTP/1.1" 200 14
+ 2020-05-12 12:51:55,507 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,507 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:51:55,519 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element HTTP/1.1" 200 88
+ 2020-05-12 12:51:55,519 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,519 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element/6d5236a6-5777-4066-b485-e9a2d6ce0c90/click {"id": "6d5236a6-5777-4066-b485-e9a2d6ce0c90"}
+ 2020-05-12 12:51:55,580 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element/6d5236a6-5777-4066-b485-e9a2d6ce0c90/click HTTP/1.1" 200 14
+ 2020-05-12 12:51:55,580 - DEBUG- Finished Request
+ 2020-05-12 12:51:55,580 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:51:58,764 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/url HTTP/1.1" 200 14
+ 2020-05-12 12:51:58,764 - DEBUG- Finished Request
+ 2020-05-12 12:52:01,768 - DEBUG- POST http://127.0.0.1:36443/session/8814d035716080210ba0549050ca25a5/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:52:09,792 - DEBUG- http://127.0.0.1:36443 "POST /session/8814d035716080210ba0549050ca25a5/element HTTP/1.1" 404 294
+ 2020-05-12 12:52:09,792 - DEBUG- Finished Request
+ 2020-05-12 12:52:55,307 - DEBUG- Start of program
+ 2020-05-12 12:52:56,315 - DEBUG- POST http://127.0.0.1:50099/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:52:56,316 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:50099
+ 2020-05-12 12:52:56,718 - DEBUG- http://127.0.0.1:50099 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:52:56,718 - DEBUG- Finished Request
+ 2020-05-12 12:52:56,719 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/timeouts {"implicit": 8000}
+ 2020-05-12 12:52:56,720 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:52:56,720 - DEBUG- Finished Request
+ 2020-05-12 12:52:56,720 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:52:57,898 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/url HTTP/1.1" 200 14
+ 2020-05-12 12:52:57,898 - DEBUG- Finished Request
+ 2020-05-12 12:52:57,899 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:52:57,934 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:52:57,935 - DEBUG- Finished Request
+ 2020-05-12 12:52:57,935 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/57b14650-5060-4551-ad0d-82fbc073f742/click {"id": "57b14650-5060-4551-ad0d-82fbc073f742"}
+ 2020-05-12 12:52:59,344 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/57b14650-5060-4551-ad0d-82fbc073f742/click HTTP/1.1" 200 14
+ 2020-05-12 12:52:59,344 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,344 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:52:59,359 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:52:59,360 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,360 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/636a94b7-3ae3-4aad-a2ba-a643d60b69a6/click {"id": "636a94b7-3ae3-4aad-a2ba-a643d60b69a6"}
+ 2020-05-12 12:52:59,431 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/636a94b7-3ae3-4aad-a2ba-a643d60b69a6/click HTTP/1.1" 200 14
+ 2020-05-12 12:52:59,432 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,432 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/636a94b7-3ae3-4aad-a2ba-a643d60b69a6/value {"text": "nickgabriel8@gmail.com", "value": ["n", "i", "c", "k", "g", "a", "b", "r", "i", "e", "l", "8", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "636a94b7-3ae3-4aad-a2ba-a643d60b69a6"}
+ 2020-05-12 12:52:59,548 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/636a94b7-3ae3-4aad-a2ba-a643d60b69a6/value HTTP/1.1" 200 14
+ 2020-05-12 12:52:59,548 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,549 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:52:59,569 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:52:59,570 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,570 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/57f2fba3-79b5-41c6-8a55-b90c982a2f98/click {"id": "57f2fba3-79b5-41c6-8a55-b90c982a2f98"}
+ 2020-05-12 12:52:59,636 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/57f2fba3-79b5-41c6-8a55-b90c982a2f98/click HTTP/1.1" 200 14
+ 2020-05-12 12:52:59,636 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,637 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/57f2fba3-79b5-41c6-8a55-b90c982a2f98/value {"text": "Squark3n8lork!!", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k", "!", "!"], "id": "57f2fba3-79b5-41c6-8a55-b90c982a2f98"}
+ 2020-05-12 12:52:59,712 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/57f2fba3-79b5-41c6-8a55-b90c982a2f98/value HTTP/1.1" 200 14
+ 2020-05-12 12:52:59,712 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,712 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:52:59,722 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:52:59,722 - DEBUG- Finished Request
+ 2020-05-12 12:52:59,723 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/f11781e9-c9ee-4357-a12b-1a5d82560d55/click {"id": "f11781e9-c9ee-4357-a12b-1a5d82560d55"}
+ 2020-05-12 12:52:59,785 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/f11781e9-c9ee-4357-a12b-1a5d82560d55/click HTTP/1.1" 200 14
+ 2020-05-12 12:52:59,785 - DEBUG- Finished Request
+ 2020-05-12 12:53:02,789 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:53:03,560 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/url HTTP/1.1" 200 14
+ 2020-05-12 12:53:03,560 - DEBUG- Finished Request
+ 2020-05-12 12:53:06,563 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:53:06,581 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:53:06,581 - DEBUG- Finished Request
+ 2020-05-12 12:53:06,582 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/92c858c6-c140-4342-bb06-67be95cc4f57/click {"id": "92c858c6-c140-4342-bb06-67be95cc4f57"}
+ 2020-05-12 12:53:06,664 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/92c858c6-c140-4342-bb06-67be95cc4f57/click HTTP/1.1" 200 14
+ 2020-05-12 12:53:06,665 - DEBUG- Finished Request
+ 2020-05-12 12:53:08,667 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "html.no-js body.facebook div.react-header-container div.react-super-inner-container div.settings div div.open ul.dropdown-menu.header-menu li a#historical-data"}
+ 2020-05-12 12:53:08,682 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:53:08,682 - DEBUG- Finished Request
+ 2020-05-12 12:53:08,682 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/9b1ea170-119f-4306-bc49-bd5df1c88f68/click {"id": "9b1ea170-119f-4306-bc49-bd5df1c88f68"}
+ 2020-05-12 12:53:08,766 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/9b1ea170-119f-4306-bc49-bd5df1c88f68/click HTTP/1.1" 200 14
+ 2020-05-12 12:53:08,767 - DEBUG- Finished Request
+ 2020-05-12 12:53:11,770 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "#select_scope_chzn > a:nth-child(1) > div:nth-child(2)"}
+ 2020-05-12 12:53:11,786 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:53:11,786 - DEBUG- Finished Request
+ 2020-05-12 12:53:11,786 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/c064aaa4-9927-4ce5-8a11-28a08c9960d1/click {"id": "c064aaa4-9927-4ce5-8a11-28a08c9960d1"}
+ 2020-05-12 12:53:11,845 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/c064aaa4-9927-4ce5-8a11-28a08c9960d1/click HTTP/1.1" 200 14
+ 2020-05-12 12:53:11,846 - DEBUG- Finished Request
+ 2020-05-12 12:53:12,847 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "#select_scope_chzn_o_1"}
+ 2020-05-12 12:53:12,864 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 200 88
+ 2020-05-12 12:53:12,865 - DEBUG- Finished Request
+ 2020-05-12 12:53:12,865 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element/8c261525-74d8-4c65-8884-f6cd1e22141f/click {"id": "8c261525-74d8-4c65-8884-f6cd1e22141f"}
+ 2020-05-12 12:53:12,939 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element/8c261525-74d8-4c65-8884-f6cd1e22141f/click HTTP/1.1" 200 14
+ 2020-05-12 12:53:12,940 - DEBUG- Finished Request
+ 2020-05-12 12:53:12,940 - DEBUG- POST http://127.0.0.1:50099/session/fd81dd2ace53209961c23fe8b3eb9ef0/element {"using": "css selector", "value": "#sel4GW_chzn > a:nth-child(1) > div:nth-child(2)"}
+ 2020-05-12 12:53:20,990 - DEBUG- http://127.0.0.1:50099 "POST /session/fd81dd2ace53209961c23fe8b3eb9ef0/element HTTP/1.1" 404 278
+ 2020-05-12 12:53:20,991 - DEBUG- Finished Request
+ 2020-05-12 12:54:08,384 - DEBUG- Start of program
+ 2020-05-12 12:54:09,394 - DEBUG- POST http://127.0.0.1:51359/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 12:54:09,395 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:51359
+ 2020-05-12 12:54:09,696 - DEBUG- http://127.0.0.1:51359 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 12:54:09,697 - DEBUG- Finished Request
+ 2020-05-12 12:54:09,697 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/timeouts {"implicit": 8000}
+ 2020-05-12 12:54:09,699 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/timeouts HTTP/1.1" 200 14
+ 2020-05-12 12:54:09,699 - DEBUG- Finished Request
+ 2020-05-12 12:54:09,699 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/url {"url": "https://apps.crowdtangle.com/auth?view=0"}
+ 2020-05-12 12:54:11,000 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/url HTTP/1.1" 200 14
+ 2020-05-12 12:54:11,001 - DEBUG- Finished Request
+ 2020-05-12 12:54:11,001 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": ".authView__disclaimer--KNPUl > a:nth-child(3)"}
+ 2020-05-12 12:54:11,105 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:11,106 - DEBUG- Finished Request
+ 2020-05-12 12:54:11,106 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/3582b28b-2aa3-437b-ae11-93c66434b181/click {"id": "3582b28b-2aa3-437b-ae11-93c66434b181"}
+ 2020-05-12 12:54:12,243 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/3582b28b-2aa3-437b-ae11-93c66434b181/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:12,244 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,244 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "#email"}
+ 2020-05-12 12:54:12,267 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:12,268 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,268 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/e0b68d1b-d285-4635-b837-3d69041a3446/click {"id": "e0b68d1b-d285-4635-b837-3d69041a3446"}
+ 2020-05-12 12:54:12,330 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/e0b68d1b-d285-4635-b837-3d69041a3446/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:12,331 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,331 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/e0b68d1b-d285-4635-b837-3d69041a3446/value {"text": "nickgabriel8@gmail.com", "value": ["n", "i", "c", "k", "g", "a", "b", "r", "i", "e", "l", "8", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "e0b68d1b-d285-4635-b837-3d69041a3446"}
+ 2020-05-12 12:54:12,471 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/e0b68d1b-d285-4635-b837-3d69041a3446/value HTTP/1.1" 200 14
+ 2020-05-12 12:54:12,471 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,471 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "#pass"}
+ 2020-05-12 12:54:12,483 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:12,484 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,484 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/5baa678a-dd74-4797-a3b3-768c9964ffb3/click {"id": "5baa678a-dd74-4797-a3b3-768c9964ffb3"}
+ 2020-05-12 12:54:12,550 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/5baa678a-dd74-4797-a3b3-768c9964ffb3/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:12,550 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,551 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/5baa678a-dd74-4797-a3b3-768c9964ffb3/value {"text": "Squark3n8lork!!", "value": ["S", "q", "u", "a", "r", "k", "3", "n", "8", "l", "o", "r", "k", "!", "!"], "id": "5baa678a-dd74-4797-a3b3-768c9964ffb3"}
+ 2020-05-12 12:54:12,634 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/5baa678a-dd74-4797-a3b3-768c9964ffb3/value HTTP/1.1" 200 14
+ 2020-05-12 12:54:12,635 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,635 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "#loginbutton"}
+ 2020-05-12 12:54:12,651 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:12,651 - DEBUG- Finished Request
+ 2020-05-12 12:54:12,651 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/15bc8dc6-2df3-486b-9689-5e237a763330/click {"id": "15bc8dc6-2df3-486b-9689-5e237a763330"}
+ 2020-05-12 12:54:12,730 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/15bc8dc6-2df3-486b-9689-5e237a763330/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:12,731 - DEBUG- Finished Request
+ 2020-05-12 12:54:15,734 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/url {"url": "https://apps.crowdtangle.com/oddahsboardtest01/lists/pages"}
+ 2020-05-12 12:54:16,575 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/url HTTP/1.1" 200 14
+ 2020-05-12 12:54:16,575 - DEBUG- Finished Request
+ 2020-05-12 12:54:19,579 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": ".settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)"}
+ 2020-05-12 12:54:19,597 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:19,598 - DEBUG- Finished Request
+ 2020-05-12 12:54:19,598 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/e95644e7-0d94-42c5-99cd-d74cab94ff32/click {"id": "e95644e7-0d94-42c5-99cd-d74cab94ff32"}
+ 2020-05-12 12:54:19,698 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/e95644e7-0d94-42c5-99cd-d74cab94ff32/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:19,698 - DEBUG- Finished Request
+ 2020-05-12 12:54:21,700 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "html.no-js body.facebook div.react-header-container div.react-super-inner-container div.settings div div.open ul.dropdown-menu.header-menu li a#historical-data"}
+ 2020-05-12 12:54:21,717 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:21,718 - DEBUG- Finished Request
+ 2020-05-12 12:54:21,718 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/7f375ffa-8fa7-4221-84b2-1c9ba21857ab/click {"id": "7f375ffa-8fa7-4221-84b2-1c9ba21857ab"}
+ 2020-05-12 12:54:21,819 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/7f375ffa-8fa7-4221-84b2-1c9ba21857ab/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:21,819 - DEBUG- Finished Request
+ 2020-05-12 12:54:24,822 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "#select_scope_chzn > a:nth-child(1) > div:nth-child(2)"}
+ 2020-05-12 12:54:24,839 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:24,839 - DEBUG- Finished Request
+ 2020-05-12 12:54:24,839 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/73020546-50b7-42b8-bc11-4ae50095c17e/click {"id": "73020546-50b7-42b8-bc11-4ae50095c17e"}
+ 2020-05-12 12:54:24,912 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/73020546-50b7-42b8-bc11-4ae50095c17e/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:24,913 - DEBUG- Finished Request
+ 2020-05-12 12:54:25,914 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "#select_scope_chzn_o_1"}
+ 2020-05-12 12:54:25,930 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 200 88
+ 2020-05-12 12:54:25,930 - DEBUG- Finished Request
+ 2020-05-12 12:54:25,930 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/467ed4f4-6fbb-4b19-a71e-e7b0f1c5360a/click {"id": "467ed4f4-6fbb-4b19-a71e-e7b0f1c5360a"}
+ 2020-05-12 12:54:25,998 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element/467ed4f4-6fbb-4b19-a71e-e7b0f1c5360a/click HTTP/1.1" 200 14
+ 2020-05-12 12:54:25,999 - DEBUG- Finished Request
+ 2020-05-12 12:54:25,999 - DEBUG- POST http://127.0.0.1:51359/session/2d01b2c1c419e63ee47f9a0ee975eb5d/element {"using": "css selector", "value": "#sel4GW_chzn > a:nth-child(1) > div:nth-child(2)"}
+ 2020-05-12 12:54:34,027 - DEBUG- http://127.0.0.1:51359 "POST /session/2d01b2c1c419e63ee47f9a0ee975eb5d/element HTTP/1.1" 404 278
+ 2020-05-12 12:54:34,027 - DEBUG- Finished Request
+ 2020-05-12 13:25:08,453 - DEBUG- diff parser start
+ 2020-05-12 13:25:08,454 - DEBUG- line_lengths old: 1; new: 1
+ 2020-05-12 13:25:08,454 - DEBUG- -> code[replace] old[1:1] new[1:1]
+ 2020-05-12 13:25:08,454 - DEBUG- parse_part from 1 to 1 (to 0 in part parser)
+ 2020-05-12 13:25:08,455 - DEBUG- diff parser end
+ 2020-05-12 13:25:52,827 - DEBUG- POST http://127.0.0.1:40347/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--no-sandbox", "--disable-notifications", "--disable-gpu", "start-maximized", "disable-infobars", "--disable-extensions", "--disable-dev-shm-usage"]}}}
+ 2020-05-12 13:25:52,828 - DEBUG- Starting new HTTP connection (1): 127.0.0.1:40347
+ 2020-05-12 13:25:53,176 - DEBUG- http://127.0.0.1:40347 "POST /session HTTP/1.1" 200 681
+ 2020-05-12 13:25:53,176 - DEBUG- Finished Request
+ 2020-05-12 13:25:53,176 - DEBUG- POST http://127.0.0.1:40347/session/811e8f9f2919546f72dfcf560fa93454/url {"url": "https://apps.crowdtangle.com/search/home"}
+ 2020-05-12 13:25:54,625 - DEBUG- http://127.0.0.1:40347 "POST /session/811e8f9f2919546f72dfcf560fa93454/url HTTP/1.1" 200 14
+ 2020-05-12 13:25:54,625 - DEBUG- Finished Request
