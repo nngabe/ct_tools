@@ -31,7 +31,7 @@ def fb_login(driver,username,password):
 
   time.sleep(8)
 
-def get_driver():
+def get_driver(browser):
   
   """Initialize driver with whatever options you want here."""
 
@@ -46,7 +46,10 @@ def get_driver():
   options.add_argument('--disable-extensions')
   options.add_argument('--disable-dev-shm-usage')
   
-  driver = webdriver.Chrome(options=options)
+  if browser=='chrome':
+    driver = webdriver.Chrome(options=options)
+  elif browser=='firefox':
+    driver = webdriver.Firefox(executable_path = 'C:\Program Files\geckodriver.exe')
 
   return driver
 
