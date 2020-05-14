@@ -41,7 +41,7 @@ def search_links(links_file, rootdir):
     outdir = rootdir + 'out_search'
     if not (os.path.exists(outdir)):
         os.mkdir(outdir)
-    dt_string = datetime.datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
+    dt_string = datetime.datetime.now().strftime("%d-%m-%Y_%H_%M_%S")
     write_dir = outdir + '/' + dt_string
     os.mkdir(write_dir)
     cp(links_file,write_dir)
@@ -73,9 +73,9 @@ def search_links(links_file, rootdir):
                 continue
             source = table.get_attribute('outerHTML')
             soup = BeautifulSoup(source, 'html.parser')
+
             m = len(soup.find_all('a'))
             hrefs = [soup.find_all('a')[i].get('href') for i in range(m) ]
-
             text = [soup.find_all('p')[i].text for i in range(m*5) ]
             cols = text[0:5]
             rows = [text[5*i:(5*(i+1))] for i in range(1,m)]
@@ -85,6 +85,7 @@ def search_links(links_file, rootdir):
             cols = cols[0:5]
 
             df[name] = pd.DataFrame(rows, columns=cols)
+            df[name]['hrefs'] = hrefs
 
             spl = lambda x,delim,n: x.split(delim) if (n==0) else x.split(delim)[0:n]
             joinif = lambda arr: ''.join(arr) if (len(arr)>1) else arr[0]
