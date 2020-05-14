@@ -2,7 +2,7 @@
 """
 Created on Thu Apr 30 13:07:39 2020
 
-@author: rhysl
+@author: rhysl, searri
 """
 
 
@@ -13,7 +13,7 @@ from random import randint
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from datetime import date, time
+from datetime import date, time, datetime
 import pandas as pd
 import traceback, logging, configparser
 
@@ -33,7 +33,7 @@ logging.debug('Start of program')
 Reading Configs to store login credentials
 '''
 config = configparser.ConfigParser()
-config.read("/home/gabe/config.ini")
+config.read("config.ini")
 
 phone = config['CrowdTangle']['phone']
 password = config['CrowdTangle']['password']
@@ -42,8 +42,7 @@ password = config['CrowdTangle']['password']
 launching the browser and logging in
 '''
 
-browser = get_driver('chrome')
-#browser = webdriver.Firefox(executable_path = 'C:\Program Files\geckodriver.exe') ##c/drivers/gecko on the big computer
+browser = get_driver('firefox') ##c/drivers/gecko on the big computer
 browser.implicitly_wait(15) #tells browser to wait up to 15 seconds for delay loading
 
 browser.get('https://apps.crowdtangle.com/auth?view=0')
@@ -65,7 +64,7 @@ sleep(4)
 Navigating to the Historical Data page, selecting scope as "By List," selecting list as "Legacy Neutral"
 '''
 
-browser.get('https://apps.crowdtangle.com/oddashboardtest01')
+browser.get('https://apps.crowdtangle.com/oddashboardv4/lists/pages')
 sleep(3)
 Settings_button = browser.find_element_by_css_selector('.settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)').click()
 sleep(2)
@@ -117,41 +116,41 @@ def Fetch_PostHistory(begin, until, interval):
         try:
             Start_Date = Capture_range[i]                
             End_Date = Capture_range[j]
-            To_Box.click()
-            sleep(1)
-            To_Box.clear()
-            sleep(1)
-            for char in End_Date:
-                To_Box.send_keys(char)
-                sleep(.2)
+            end_datetime = datetime.strptime(End_Date, "%m/%d/%Y")
+            curr_datetime = datetime.now()
+            days_between = curr_datetime - end_datetime
+            
             From_Box.click()
             sleep(1)
             From_Box.clear()
             sleep(1)
+            
             for char in Start_Date:
                 From_Box.send_keys(char)
-                sleep(1)
+                sleep(.2)
+            
+            To_Box.click()
+            sleep(1)
+            To_Box.clear()
+            sleep(1)
+            
+            for q in range(days_between.days):
+                To_Box.send_keys(Keys.LEFT)
+                sleep(.2)
+            To_Box.send_keys(Keys.ENTER)
+            
             FetchHistory_Button.click()
+            
             i += 1
             j += 1
             sleep(randint(5, 10))
+        
         except:
-           pass
-    #        all_lines = [i, '\n', traceback.format_exc(), '\n'] 
-    #        errorFile = open('errorInfo_' + str(today) +.txt', 'a') #opens file in append mode
-    #        errorFile.writelines(all_lines)
-    #        errorFile.close()
+           all_lines = [i, '\n', traceback.format_exc(), '\n'] 
+           errorFile = open('errorInfo_' + str(today) +'.txt', 'a') #opens file in append mode
+           errorFile.writelines(all_lines)
+           errorFile.close()
         
 Fetch_PostHistory('04/20/2020', '05/11/2020', 'W')
 
 browser.close()
-
-
-
-
-FetchHistory_Button = browser.find_element_by_css_selector('.btn-primary').click()
-    
-
-
-
-    
