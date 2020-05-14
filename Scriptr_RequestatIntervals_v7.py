@@ -17,6 +17,7 @@ from datetime import date, time
 import pandas as pd
 import traceback, logging, configparser
 
+from ct_utils import get_driver, fb_login
 
 '''
 Creates a log file of program and enables errorFile
@@ -32,7 +33,7 @@ logging.debug('Start of program')
 Reading Configs to store login credentials
 '''
 config = configparser.ConfigParser()
-config.read("config.ini")
+config.read("/home/gabe/config.ini")
 
 phone = config['CrowdTangle']['phone']
 password = config['CrowdTangle']['password']
@@ -41,7 +42,8 @@ password = config['CrowdTangle']['password']
 launching the browser and logging in
 '''
 
-browser = webdriver.Firefox(executable_path = 'C:\Program Files\geckodriver.exe') ##c/drivers/gecko on the big computer
+browser = get_driver('chrome')
+#browser = webdriver.Firefox(executable_path = 'C:\Program Files\geckodriver.exe') ##c/drivers/gecko on the big computer
 browser.implicitly_wait(15) #tells browser to wait up to 15 seconds for delay loading
 
 browser.get('https://apps.crowdtangle.com/auth?view=0')
@@ -58,12 +60,12 @@ pWord.send_keys(password)
 
 LogIn_Button = browser.find_element_by_css_selector('#loginbutton')
 LogIn_Button.click()
-
+sleep(4)
 '''
 Navigating to the Historical Data page, selecting scope as "By List," selecting list as "Legacy Neutral"
 '''
 
-browser.get('https://apps.crowdtangle.com/oddashboardv4/lists/pages')
+browser.get('https://apps.crowdtangle.com/oddashboardtest01')
 sleep(3)
 Settings_button = browser.find_element_by_css_selector('.settings > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)').click()
 sleep(2)
@@ -121,7 +123,7 @@ def Fetch_PostHistory(begin, until, interval):
             sleep(1)
             for char in End_Date:
                 To_Box.send_keys(char)
-                sleep(1)
+                sleep(.2)
             From_Box.click()
             sleep(1)
             From_Box.clear()

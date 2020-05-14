@@ -21,14 +21,14 @@ from ct_utils import fb_login, get_driver
 def search_links(links_file, rootdir):
     rtic = lambda n: randint(1,n) # lag to simulate manual data collection
 
-    # get FB/CrowdTangle username and password from INI file
+    ### get FB/CrowdTangle username and password from INI file
     config_file = path.expanduser('~/config.ini')
     config = configparser.ConfigParser()
     config.read(config_file)
     username = config['CrowdTangle']['username']
     password = config['CrowdTangle']['password']
    
-    # selenium driver setup
+    ### selenium driver setup
     browser = 'chrome' 
     driver = get_driver(browser)
     driver.implicitly_wait(4) # doesn't work for me but may work for you
@@ -37,18 +37,15 @@ def search_links(links_file, rootdir):
     driver.get('https://apps.crowdtangle.com/search/home')
     sleep(4+rtic(4))
 
-    # build directory structure to write data
+    ### build directory structure to write data
     outdir = rootdir + 'out_search'
     if not (os.path.exists(outdir)):
         os.mkdir(outdir)
-
     dt_string = datetime.datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
-    
     write_dir = outdir + '/' + dt_string
     os.mkdir(write_dir)
     cp(links_file,write_dir)
     
-
     links_df = pd.read_csv(links_file,index_col=0)
     indices = list(links_df.index)
     links = list(links_df.links)
