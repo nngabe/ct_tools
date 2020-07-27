@@ -17,7 +17,7 @@ from datetime import date, time, datetime
 import pandas as pd
 import traceback, logging, configparser
 
-from ct_utils import get_driver, fb_login
+#from ct_utils import get_driver, fb_login
 
 '''
 Creates a log file of program and enables errorFile
@@ -42,7 +42,10 @@ password = config['CrowdTangle']['password']
 launching the browser and logging in
 '''
 
-browser = get_driver('firefox') ##c/drivers/gecko on the big computer
+#browser = get_driver('firefox') this doesn't work on server b/c gecko.exe is in different path than module
+#Instead run this on OD office server
+
+browser = webdriver.Firefox(executable_path = 'C:\drivers\gecko\geckodriver.exe') 
 browser.implicitly_wait(15) #tells browser to wait up to 15 seconds for delay loading
 
 browser.get('https://apps.crowdtangle.com/auth?view=0')
@@ -151,6 +154,8 @@ def Fetch_PostHistory(begin, until, interval):
            errorFile.writelines(all_lines)
            errorFile.close()
         
-Fetch_PostHistory('04/20/2020', '05/11/2020', 'W')
+        
+
+Fetch_PostHistory('07/01/2019', '07/27/2020', 'W')
 
 browser.close()
