@@ -51,11 +51,18 @@ def search_links(links_file, rootdir):
     links = list(links_df.links)
 
     for idx,link in zip(indices,links):    
-
+        
+        try:
+            clear_button = driver.find_element_by_xpath('//div[starts-with(@class,"searchBar__clearBtn")]')
+            clear_button.click()
+        except:
+            pass
+        
         search_box = driver.find_element_by_xpath('//input[starts-with(@class,"searchBar")]')
         search_box.click()
         search_box.send_keys(link)
         search_box.send_keys(Keys.ENTER)
+        #return driver
         sleep(6+rtic(4))
 
         platforms = driver.find_element_by_class_name('react-tab-container').find_elements_by_tag_name('div')
@@ -76,15 +83,16 @@ def search_links(links_file, rootdir):
 
             m = len(soup.find_all('a'))
             hrefs = [soup.find_all('a')[i].get('href') for i in range(m) ]
-            text = [soup.find_all('p')[i].text for i in range(m*5) ]
+            #return soup
+            text = [soup.find_all('p')[i].text for i in range((m+1)*4) ]
             cols = text[0:5]
-            rows = [text[5*i:(5*(i+1))] for i in range(1,m)]
+            rows = [text[5*i:(5*(i+1))] for i in range(1,m+1)]
 
             cols[0] = 'Page'
             cols.insert(1,'Members')
             cols = cols[0:5]
 
-            df[name] = pd.DataFrame(rows, columns=cols)
+            df[name] = pd.DataFrame(rows, columns=cols[:len(rows[0])])
             df[name]['hrefs'] = hrefs
 
             spl = lambda x,delim,n: x.split(delim) if (n==0) else x.split(delim)[0:n]
@@ -106,5 +114,5 @@ if __name__ == '__main__':
 
     rootdir = './'
     links_file = 'links.csv'
-    search_links(links_file, rootdir)
+    soup = search_links(links_file, rootdir)
 

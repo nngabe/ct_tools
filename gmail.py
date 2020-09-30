@@ -75,10 +75,14 @@ def ct_message_download(messages):
             msg_str = message_str(message,service)
             soup = BeautifulSoup(msg_str, 'html.parser')
             url = soup.a.get('href')
-            wget.download(url, out='ctfiles')
+            print(url)
+            os.mkdir('out_test')
+            wget.download(url, out='out_test')
             print("%i/%i files downloaded" %(i,len(messages)))
         except:
           print("%i/%i failed" %(i,len(messages)))
+
+    return msg_str
 
 def message_str(message,service):
   
@@ -92,10 +96,10 @@ if __name__ == '__main__':
     # log in to gmail 
     creds = credentials()
     # gmail query
-    query = 'from:feedback@crowdtangle.com crowdtangle "Data Download Request" after:04/01/2020'
+    query = 'crowdtangle "Data Download Request" after:04/01/2020'
     # only need to specify for more than 500 emails
     maxResults = 500
     # get gmail id number for each email
     messages = get_messages(creds,query,maxResults)
     # get hyperlink from email and wget download
-    ct_message_download(messages)
+    soup = ct_message_download(messages)
