@@ -291,7 +291,7 @@ def clear_list(driver):
 
 if __name__ == '__main__':
 
-  uids = list(pd.read_csv('~/vax_new.tsv','\t').loc[:,'fb_uid'].astype(str))[862:]
+  uids = list(pd.read_csv('~/vax_new.tsv','\t').loc[:,'fb_uid'].astype(str))[:5]
   dummies = ['230114651240','110844299008350','147555688654796']
   ct_url = 'https://apps.crowdtangle.com/iddptest/lists/1364653'
   fb_username = pd.read_csv('~/cred.csv').iloc[0,0]
@@ -299,7 +299,7 @@ if __name__ == '__main__':
   #fb_username = 'name@email.com' 
   #fb_password = 'password'
 
-  driver = get_driver()
+  driver = get_driver('chrome')
   fb_login(driver, fb_username, fb_password)
   
   update_list(dummies, driver, ct_url, 'remove')
