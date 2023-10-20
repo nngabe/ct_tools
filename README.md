@@ -1,16 +1,16 @@
 # ct_tools
 Utilities for automating Crowdtangle tasks using selenium Python.
 
-Contents:
+##Contents:
 
-ct_utils.py - utilities for navigating Crowtangle.
+1. ct_utils.py - utilities for navigating Crowtangle.
 
-gmail.py - download Crowdtangle data requests that are sent to a gmail account.
+2. gmail.py - download Crowdtangle data requests that are sent to a gmail account.
 
-process_files.py - parse and clean raw csv file data.
+3. process_files.py - parse and clean raw csv file data.
 
-regex_search.py - query Crowdtangle by regex search.
+4. regex_search.py - query Crowdtangle by regex search.
 
-search_keyword.py - query Crowdtangle by keyword search.
+5. search_keyword.py - query Crowdtangle by keyword search.
 
-search_link.py - query Crowdtangle by URL search.
+6. search_link.py - query Crowdtangle by URL search.
